@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  font-size: 16;
+}
+
+.homepage-main {
+  background-image: url(/images/background/homepage-page-bg-xlg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #e9ebee;
+}
+
+@screen sm {
+  .container {
+    margin: 0 8px;
+  }
+}
+
+@screen md {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@screen lg {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.btn {
+  @apply cursor-pointer;
+}
+
+.btn-rounded {
+  @apply rounded-full;
+}
+
+.btn-normal {
+  @apply px-6 py-4;
+}
+
+.why-doraemon {
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: -0.25px;
+  line-height: 1.125;
+}
+
+.brand .logo-white {
+  filter: brightness(0) invert(1);
+}
+
+.menu-bar > div + div {
+  @apply ml-8;
+}
+
+.menu-bar div {
+  @apply text-lg .cursor-pointer;
+}
+
+.card-peel {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 0 70px 70px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.arrow {
+  height: 16px;
+  width: 16px;
+  background: white;
+  left: 50%;
+  bottom: 100%;
+  transform: rotate(45deg) translate(0 50%);
+}
+
+footer {
+  background-color: #022144;
+  padding: 80px 0 40px;
+}

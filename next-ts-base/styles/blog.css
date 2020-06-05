@@ -1,0 +1,239 @@
+.post-content {
+  line-height: 1.58;
+  color: #4a5568;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+  font-size: 1.2rem;
+}
+
+.post-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.post-content h1 {
+  margin-bottom: 0.25rem;
+  line-height: 1;
+  color: #1a202c;
+  font-weight: 300;
+  font-size: 1.675rem;
+}
+
+.post-content h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.post-content h3 {
+  margin-top: 3rem;
+  margin-bottom: -0.75rem;
+  color: #1a202c;
+  line-height: 1.25;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.post-content h2 + .post-content h3 {
+  margin-top: 1.5rem;
+}
+
+.post-content ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.post-content ul {
+  list-style: none;
+  padding-left: 24px;
+}
+
+.post-content ul > li:before {
+  content: '- ';
+  margin-left: -18px;
+  display: inline;
+}
+
+.post-content ul > li > ul > li:before {
+  content: '+ ';
+  margin-left: -18px;
+}
+
+.post-content ul li {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding-left: 10px;
+  @apply leading-tight;
+}
+
+.post-content ol li {
+  text-align: justify;
+}
+
+.post-content ol li + li {
+  margin: 8px 0;
+}
+
+.post-content h1 {
+  text-align: center;
+  font-size: 1.65em;
+}
+
+.post-content > h1 {
+  text-align: left;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  padding-top: 10px;
+  position: relative;
+  @apply text-blue-600 font-semibold;
+}
+
+.post-content blockquote {
+  border-left: 3px solid #eee;
+  padding-left: 14px;
+}
+
+.post-content strong,
+.post-content b {
+  font-weight: 600;
+  @apply text-blue-600;
+}
+
+.post-content code {
+  padding: 2px;
+  border-radius: 3px;
+  font-family: 'IBM Plex Mono', lucida sans typewriter, lucida console, monaco,
+    menlo, bitstream vera sans mono, consolas, monospace;
+  font-size: 13px;
+}
+
+.post-content p > code,
+li > code,
+li > div > code {
+  font-weight: 500;
+  color: #777;
+}
+
+.post-content pre {
+  background: transparent;
+  margin: 0;
+  display: inline-block;
+}
+
+.post-content pre > code {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: 0;
+}
+
+.post-content pre.math {
+  background: transparent !important;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+}
+
+.post-content code.math {
+  background: transparent !important;
+}
+
+.post-content img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.post-content table {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.post-content table thead {
+  background: #efefef;
+}
+
+.post-content table thead th {
+  padding: 8px;
+  font-weight: bold;
+}
+
+.post-content table td {
+  padding: 8px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.post-content table tr:nth-last-child(1) td {
+  border-bottom: 0;
+}
+
+.post-content p {
+  line-height: 1.625;
+  text-align: justify;
+}
+
+.post-content > p,
+p.post-content {
+  font-size: 1em;
+  margin-top: 1.5rem;
+}
+
+.post-content > :first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.post-content ul,
+.post-content ul li {
+  text-align: justify;
+}
+
+.post-content p img {
+  display: block;
+  margin: auto;
+}
+
+.post-content hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 30px auto;
+  width: 40%;
+}
+
+.post .title {
+  line-height: 1.2em;
+}
+
+.post .caption {
+  line-height: 1.4em;
+}
+
+.post .author {
+  line-height: normal;
+}
+
+.post .author .info {
+  font-size: 0.825em;
+  line-height: inherit;
+}
+
+.bg-post {
+  background-color: #e9ebee;
+}
